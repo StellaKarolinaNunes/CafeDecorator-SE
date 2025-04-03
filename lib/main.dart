@@ -32,3 +32,38 @@ abstract class AdicionalDecorator extends Cafe {
   @override
   double custo() => cafe.custo();
 }
+
+/* 3️⃣  Adicionados ingredientes decoradores: Leite, Chantilly e Bolo */
+
+// Decorator concreto: Leite
+class Leite extends AdicionalDecorator {
+  Leite(Cafe cafe) : super(cafe);
+
+  @override
+  String getDescricao() => "${super.getDescricao()} + Leite";
+
+  @override
+  double custo() => super.custo() + 1.5;
+}
+
+// Decorator concreto: Chantilly
+class Chantilly extends AdicionalDecorator {
+  Chantilly(Cafe cafe) : super(cafe);
+
+  @override
+  String getDescricao() => "${super.getDescricao()} + Chantilly";
+
+  @override
+  double custo() => super.custo() + 2.0;
+}
+
+// Decorator concreto: Bolo
+class Bolo extends AdicionalDecorator {
+  Bolo(Cafe cafe) : super(cafe);
+
+  @override
+  String getDescricao() => "${super.getDescricao()} + Bolo";
+
+  @override
+  double custo() => super.custo() + 20.0;
+}
