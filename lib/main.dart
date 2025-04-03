@@ -67,3 +67,16 @@ class Bolo extends AdicionalDecorator {
   @override
   double custo() => super.custo() + 20.0;
 }
+
+/* 4️⃣ Código modularizado para facilitar extensões futuras */
+
+// Exemplo de um novo decorador que poderia ser adicionado futuramente
+class Canela extends AdicionalDecorator {
+  Canela(Cafe cafe) : super(cafe);
+
+  @override
+  String getDescricao() => "${super.getDescricao()} + Canela";
+
+  @override
+  double custo() => super.custo() + 1.0;
+}
