@@ -80,3 +80,24 @@ class Canela extends AdicionalDecorator {
   @override
   double custo() => super.custo() + 1.0;
 }
+
+/* 5️⃣ Instruções de execução e estrutura do projeto documentadas */
+
+// Testando a implementação
+void main() {
+  // Criando um café simples
+  Cafe meuCafe = CafeSimples();
+  print("${meuCafe.getDescricao()} custa R\$${meuCafe.custo()}");
+
+  // Adicionando leite
+  meuCafe = Leite(meuCafe);
+  print("${meuCafe.getDescricao()} custa R\$${meuCafe.custo()}");
+
+  // Adicionando chantilly
+  meuCafe = Chantilly(meuCafe);
+  print("${meuCafe.getDescricao()} custa R\$${meuCafe.custo()}");
+
+  // Adicionando bolo
+  meuCafe = Bolo(meuCafe);
+  print("${meuCafe.getDescricao()} custa R\$${meuCafe.custo()}");
+}
