@@ -14,12 +14,12 @@
 
 ## Funcionalidades
 
--✅ Personalização dinâmica de cafés usando o padrão Decorator
--✅ Adição de ingredientes como leite, chantilly e bolo sem modificar a classe base
--✅ Estrutura modular e reutilizável para fácil extensão
--✅ Cálculo automático do preço final do café com os adicionais
--✅ Impressão da descrição detalhada da composição do café
--✅ Implementação prática de padrões de projeto para estudos acadêmicos
+- ✅ Personalização dinâmica de cafés usando o padrão Decorator
+- ✅ Adição de ingredientes como leite, chantilly e bolo sem modificar a classe base
+- ✅ Estrutura modular e reutilizável para fácil extensão
+- ✅ Cálculo automático do preço final do café com os adicionais
+- ✅ Impressão da descrição detalhada da composição do café
+- ✅ Implementação prática de padrões de projeto para estudos acadêmicos
 
 ## Como Rodar a Aplicação :arrow_forward:
 
